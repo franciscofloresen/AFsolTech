@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cyan-400: #22d3ee;
+  --color-blue-600: #2563eb;
+  /* Add any additional custom theme tokens here if necessary. The main.txt code handles custom colors via arbitrary values or standard tailwind colors mostly. */
+}
