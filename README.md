@@ -1,16 +1,60 @@
-# React + Vite
+# AF Soluciones Tecnológicas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Professional web presence and consulting services platform.
 
-Currently, two official plugins are available:
+![AF Soluciones](/src/assets/hero.png) <!-- Update the hero.png image eventually if you'd like a thumbnail -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
+**Website:** [https://d19pd88nsr6pae.cloudfront.net](https://d19pd88nsr6pae.cloudfront.net)
 
-## React Compiler
+## 🛠 Tech Stack
+- **Frontend Framework:** React 19 + Vite 6
+- **Styling:** Tailwind CSS v4
+- **Icons:** Lucide React
+- **Cloud Infrastructure:** AWS S3 & CloudFront
+- **Infrastructure as Code:** Terraform
+- **CI/CD:** GitHub Actions
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 💻 Local Development
 
-## Expanding the ESLint configuration
+1. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. **Run Development Server:**
+   ```bash
+   npm run dev
+   ```
+   The application will be available at `http://localhost:5173`.
+
+## ☁️ Cloud Infrastructure (AWS)
+
+The AWS infrastructure is provisioned using Terraform to adhere to the Well-Architected Framework (Cost Optimization & Performance Efficiency). It runs entirely on the AWS Free Tier.
+
+### Modifying Infrastructure
+1. Navigate to the `terraform/` directory.
+2. Initialize and deploy:
+   ```bash
+   terraform init
+   terraform apply
+   ```
+
+## 🔄 CI/CD Pipeline
+
+This project uses **GitHub Actions** for Continuous Integration and Continuous Deployment (CI/CD). 
+
+Any pushes or merges to the `main` branch will automatically:
+1. Build the React application.
+2. Sync the compiled `.js/.css/.html` files with the AWS S3 Bucket.
+3. Invalidate the AWS CloudFront global CDN cache.
+
+### Required GitHub Secrets
+To perform the deployments, the following Repository Secrets are configured in GitHub:
+- `ACCESS_KEY_ID`: AWS IAM User access key.
+- `SECRET_ACCESS_KEY`: AWS IAM User secret key.
+- `AWS_S3_BUCKET_NAME`: The target S3 Bucket (`afsolucionestech-assets-web-k561zz`)
+- `AWS_CLOUDFRONT_DISTRIBUTION_ID`: The target CDN ID (`E1KL7OQSX0A7J8`)
+
+## 📝 License
+Copyright © AF Soluciones Tecnológicas. All rights reserved.
