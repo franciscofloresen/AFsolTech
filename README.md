@@ -2,7 +2,7 @@
 
 Professional web presence and consulting services platform.
 
-![AF Soluciones](/src/assets/hero.png) <!-- Update the hero.png image eventually if you'd like a thumbnail -->
+![AF Soluciones](public/logo.png)
 
 ## 🚀 Live Demo
 **Website:** [https://d19pd88nsr6pae.cloudfront.net](https://d19pd88nsr6pae.cloudfront.net)

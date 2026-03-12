@@ -91,33 +91,16 @@ const App = () => {
               </div>
             </div>
 
-            {/* Elemento Visual Abstracto (Reemplaza la típica imagen aburrida) */}
+            {/* Hero Image (Logo) */}
             <div className="relative hidden lg:block">
-              <div className="aspect-square w-full max-w-md mx-auto relative">
-                {/* Cuadros de cristal superpuestos */}
-                <div className="absolute top-10 right-10 w-64 h-64 bg-gradient-to-br from-blue-600/20 to-cyan-400/5 backdrop-blur-3xl border border-white/10 rounded-3xl animate-[pulse_4s_ease-in-out_infinite]"></div>
-                <div className="absolute bottom-10 left-10 w-72 h-48 bg-[#0a0f18]/80 backdrop-blur-xl border border-white/5 rounded-3xl p-6 shadow-2xl flex flex-col justify-between transform -translate-y-4">
-                  <div className="flex justify-between items-start">
-                    <Server className="text-cyan-400 w-8 h-8" />
-                    <span className="text-xs font-mono text-gray-500">EST. 100%</span>
-                  </div>
-                  <div>
-                    <p className="text-white font-bold text-lg">Migración Cloud</p>
-                    <p className="text-sm text-gray-400">Seguridad & Acceso 24/7</p>
-                  </div>
-                </div>
-                <div className="absolute top-1/4 left-0 w-48 h-56 bg-[#0a0f18]/90 backdrop-blur-xl border border-white/10 rounded-3xl p-5 shadow-2xl z-10">
-                   <Code className="text-blue-500 w-8 h-8 mb-4" />
-                   <p className="text-white font-bold">Desarrollo Web</p>
-                   <div className="mt-4 space-y-2">
-                     <div className="h-2 w-full bg-white/10 rounded-full overflow-hidden">
-                       <div className="h-full bg-blue-500 w-3/4"></div>
-                     </div>
-                     <div className="h-2 w-full bg-white/10 rounded-full overflow-hidden">
-                       <div className="h-full bg-cyan-400 w-1/2"></div>
-                     </div>
-                   </div>
-                </div>
+              <div className="w-full max-w-md mx-auto relative flex items-center justify-center">
+                {/* Glow effect behind the logo */}
+                <div className="absolute inset-0 bg-cyan-500/20 rounded-full blur-[100px] -z-10 animate-[pulse_4s_ease-in-out_infinite]"></div>
+                <img 
+                  src="/logo.png" 
+                  alt="AF Soluciones Logo" 
+                  className="w-full h-auto drop-shadow-[0_0_30px_rgba(34,211,238,0.2)] transform hover:scale-105 transition-transform duration-700"
+                />
               </div>
             </div>
           </div>
