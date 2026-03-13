@@ -17,7 +17,7 @@ const App = () => {
 
   // Enlaces de contacto
   const contactLinks = {
-    whatsapp: "https://wa.me/521234567890?text=Hola,%20me%20interesa%20información.",
+    whatsapp: "https://wa.me/523318319515?text=Hola,%20me%20interesa%20información.",
     email: "mailto:contacto@afsoluciones.com",
     facebook: "https://facebook.com/afsolucionestec"
   };
