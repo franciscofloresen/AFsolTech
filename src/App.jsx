@@ -91,7 +91,7 @@ const App = () => {
               </div>
             </div>
 
-            {/* Hero Image (Logo) */}
+            {/* Hero Image */}
             <div className="relative hidden lg:block">
               <div className="w-full max-w-md mx-auto relative flex items-center justify-center">
                 {/* Glow effect behind the logo */}
